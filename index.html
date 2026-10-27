@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IWaithI — Minecraft Skin Artist</title>
+  <meta name="description" content="Custom Minecraft skins and 4D models, crafted pixel by pixel. Commissions open.">
+  <meta property="og:title" content="IWaithI — Minecraft Skin Artist">
+  <meta property="og:description" content="Custom Minecraft skins and 4D models, crafted pixel by pixel.">
+  <meta property="og:image" content="media/works/4d-wizard.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=1">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Home">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__name" data-bind="name">IWaithI</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark theme" title="Toggle theme">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 1h2v2H7zM7 13h2v2H7zM1 7h2v2H1zM13 7h2v2h-2zM3 3h2v2H3zM11 11h2v2h-2zM11 3h2v2h-2zM3 11h2v2H3zM5 5h6v6H5z"/></svg>
+        </button>
+        <button class="btn btn--primary btn--sm js-discord" type="button">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 5.3A16.6 16.6 0 0 0 15.5 4l-.5 1.1a15.3 15.3 0 0 0-6 0L8.5 4a16.6 16.6 0 0 0-4.1 1.3C1.8 9.2 1.1 13 1.4 16.7a16.7 16.7 0 0 0 5 2.6l1.1-1.7a10.8 10.8 0 0 1-1.7-.8l.4-.3a11.9 11.9 0 0 0 11.6 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.7a16.6 16.6 0 0 0 5-2.6c.4-4.3-.7-8-3-11.4ZM8.7 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+          <span class="hide-xs">Order on Discord</span><span class="show-xs">Order</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow" data-bind="eyebrow"></p>
+          <h1 class="hero__title" data-bind="heroTitle"></h1>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="hero__lead" data-bind="heroText"></p>
+          <div class="hero__cta">
+            <a class="btn btn--primary btn--lg" href="#work">View my work <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="link-cta" href="#pricing">Commission info <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="hero__art">
+          <img class="pixel-img" data-bind-src="heroImage" alt="4D Minecraft character: a wizard in a wide hat with a purple broom" width="516" height="737">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Selected work</h2>
+          <span class="section__line" aria-hidden="true"></span>
+          <div class="chips" role="tablist" aria-label="Filter work"></div>
+        </div>
+        <div class="works" aria-live="polite"></div>
+        <p class="empty" hidden>Nothing here yet — new work is on the way.</p>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Commission pricing</h2>
+          <span class="section__line" aria-hidden="true"></span>
+          <span class="pixel-cluster" aria-hidden="true"></span>
+        </div>
+        <div class="pricing"></div>
+        <ul class="perks"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="section__head">
+          <h2 class="section__title">About</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </div>
+        <div class="about__body" data-bind="about"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-bind="ctaTitle"></h2>
+        <p class="cta__text" data-bind="ctaText"></p>
+        <div class="cta__buttons">
+          <button class="btn btn--primary js-discord" type="button">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 5.3A16.6 16.6 0 0 0 15.5 4l-.5 1.1a15.3 15.3 0 0 0-6 0L8.5 4a16.6 16.6 0 0 0-4.1 1.3C1.8 9.2 1.1 13 1.4 16.7a16.7 16.7 0 0 0 5 2.6l1.1-1.7a10.8 10.8 0 0 1-1.7-.8l.4-.3a11.9 11.9 0 0 0 11.6 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.7a16.6 16.6 0 0 0 5-2.6c.4-4.3-.7-8-3-11.4ZM8.7 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+            Discord: <span data-bind="discord"></span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </button>
+          <a class="btn btn--ghost js-telegram" href="#" target="_blank" rel="noopener" hidden>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 3.6 18.7 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.2 12.6l-4.9-1.5c-1-.3-1.1-1 .2-1.5L20.6 2.3c.9-.3 1.6.2 1.3 1.3Z"/></svg>
+            View Telegram portfolio <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__line" aria-hidden="true"></span>
+    <span><span data-bind="name">IWaithI</span> — <span data-bind="role">Minecraft Skin Artist</span></span>
+    <span class="footer__line" aria-hidden="true"></span>
+  </footer>
+
+  <dialog class="viewer" aria-label="Work preview">
+    <button class="viewer__close" type="button" aria-label="Close">×</button>
+    <div class="viewer__stage">
+      <button class="viewer__nav viewer__prev" type="button" aria-label="Previous image">←</button>
+      <img class="viewer__img pixel-img" alt="">
+      <button class="viewer__nav viewer__next" type="button" aria-label="Next image">→</button>
+    </div>
+    <div class="viewer__info">
+      <h3 class="viewer__title"></h3>
+      <span class="rule" aria-hidden="true"></span>
+      <div class="viewer__text"></div>
+      <div class="viewer__dots"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:16px">This site needs JavaScript to show the portfolio.</p></noscript>
+  <script src="content/site.js?v=1" defer></script>
+  <script src="content/works.js?v=1" defer></script>
+  <script src="assets/app.js?v=1" defer></script>
+</body>
+</html>
