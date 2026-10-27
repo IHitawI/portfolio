@@ -73,6 +73,13 @@
 
   /* ---------- Works ---------- */
   const cats = SITE.categories || {};
+  // untitled works get "Skin 01"-style names in list order; new works go to the end so numbers stay stable
+  const counters = {};
+  WORKS.forEach((w) => {
+    counters[w.category] = (counters[w.category] || 0) + 1;
+    if (!w.title) w.title = `${(SITE.itemNames || {})[w.category] || 'Work'} ${String(counters[w.category]).padStart(2, '0')}`;
+    if (!w.lines) w.lines = (SITE.defaultLines || {})[w.category] || [];
+  });
   const used = Object.keys(cats).filter((c) => WORKS.some((w) => w.category === c));
   const chips = $('.chips');
   const grid = $('.works');

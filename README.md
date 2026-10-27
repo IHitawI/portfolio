@@ -4,13 +4,12 @@
 
 ## Как добавить работу
 1. Картинку (PNG с прозрачным фоном) положить в `media/works/`.
-2. В `content/works.js` добавить запись в начало списка:
+2. В `content/works.js` добавить запись в конец списка (номер Skin NN / 4D Model NN ставится сам):
    ```js
    {
      "id": "short-name",
-     "title": "Название",
      "category": "skin",            // "skin" или "4d" (названия фильтров — SITE.categories)
-     "lines": ["Строка 1", "Строка 2"],
+     // необязательно: "title": "Своё название", "lines": ["Своя подпись"]
      "image": "media/works/short-name.png",
      "gallery": ["media/works/short-name-back.png"],   // доп. ракурсы, можно []
      "description": ["Необязательный текст для окна просмотра, **жирный** работает"]

@@ -22,6 +22,14 @@ window.SITE = {
     "skin": "Skins",
     "4d": "4D Models"
   },
+  "itemNames": {
+    "skin": "Skin",
+    "4d": "4D Model"
+  },
+  "defaultLines": {
+    "skin": ["Custom textures & shading"],
+    "4d": ["Custom skin + 3D details", "Modelled and textured in Blockbench."]
+  },
   "pricing": [
     {
       "title": "Detailed Skin",
