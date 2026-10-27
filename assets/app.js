@@ -68,8 +68,6 @@
       showToast(`My Discord: ${contacts.discord}`);
     }
   }));
-  const tg = $('.js-telegram');
-  if (contacts.telegramUrl) { tg.href = contacts.telegramUrl; tg.hidden = false; }
 
   /* ---------- Works ---------- */
   const cats = SITE.categories || {};

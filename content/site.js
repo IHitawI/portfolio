@@ -15,8 +15,7 @@ window.SITE = {
   ],
   "contacts": {
     "discord": "iwaithi",
-    "discordUrl": "",
-    "telegramUrl": ""
+    "discordUrl": ""
   },
   "categories": {
     "skin": "Skins",

@@ -18,8 +18,8 @@
 Новая категория — добавить её в `SITE.categories` в `content/site.js`, фильтр появится сам.
 
 ## Тексты, цены, контакты
-`content/site.js`: заголовок, «обо мне», карточки цен (`pricing`), плашки под ценами (`perks`, иконки: clock, revisions, paypal, check), Discord и Telegram.
-Пустой `telegramUrl` прячет кнопку Telegram. Пустой `discordUrl` — кнопка Discord копирует ник.
+`content/site.js`: заголовок, «обо мне», карточки цен (`pricing`), плашки под ценами (`perks`, иконки: clock, revisions, paypal, check), Discord.
+Пустой `discordUrl` — кнопка Discord копирует ник.
 
 ## Локальный просмотр
 `python -m http.server 8765 -d .` в этой папке, затем http://localhost:8765. Можно и просто открыть `index.html`.

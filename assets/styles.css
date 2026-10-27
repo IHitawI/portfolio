@@ -77,7 +77,7 @@ h1, h2, h3 { font-family: var(--font-pixel); font-weight: 400; line-height: .95;
 @media (max-width: 480px) { .hide-xs { display: none; } .show-xs { display: inline; } }
 
 /* ---------- Pixel ornaments ---------- */
-.logo__mark, .pixel-cluster, .corner-pix {
+.pixel-cluster, .corner-pix {
   display: inline-block;
   width: 6px; height: 6px;
   background: transparent;
@@ -135,8 +135,8 @@ h1, h2, h3 { font-family: var(--font-pixel); font-weight: 400; line-height: .95;
 }
 .header.is-scrolled { border-bottom-color: var(--border); }
 .header__inner { display: flex; align-items: center; gap: 24px; height: 72px; }
-.logo { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; }
-.logo__mark { transform: scale(.85); transform-origin: left center; margin: 0 22px 24px 0; }
+.logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo__img { width: 48px; height: 48px; object-fit: contain; }
 .logo__name { font-family: var(--font-pixel); font-weight: 400; font-size: 36px; letter-spacing: .02em; }
 .nav { display: flex; gap: 32px; margin-left: 48px; }
 .nav a { text-decoration: none; color: var(--muted); font-weight: 600; font-size: 15px; transition: color .15s; }
