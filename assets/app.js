@@ -98,7 +98,7 @@
     empty.hidden = list.length > 0;
     grid.replaceChildren(...list.map((w, i) => {
       const card = el('button', {
-        class: 'work', type: 'button', style: `animation-delay:${i * 60}ms`,
+        class: `work work--${w.category}`, type: 'button', style: `animation-delay:${Math.min(i, 8) * 60}ms`,
         'aria-label': `Open ${w.title}`, onclick: () => openViewer(w),
       },
       el('span', { class: 'corner-pix', 'aria-hidden': 'true' }),

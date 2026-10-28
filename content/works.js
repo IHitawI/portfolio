@@ -61,5 +61,117 @@ window.WORKS = [
     "category": "skin",
     "image": "media/works/skin-rose-outfit.png",
     "gallery": []
+  },
+  {
+    "id": "skin-08",
+    "category": "skin",
+    "image": "media/works/skin-08.png",
+    "gallery": []
+  },
+  {
+    "id": "4d-04",
+    "category": "4d",
+    "image": "media/works/4d-04.png",
+    "gallery": []
+  },
+  {
+    "id": "4d-05",
+    "category": "4d",
+    "image": "media/works/4d-05.png",
+    "gallery": []
+  },
+  {
+    "id": "4d-06",
+    "category": "4d",
+    "image": "media/works/4d-06.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-09",
+    "category": "skin",
+    "image": "media/works/skin-09.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-10",
+    "category": "skin",
+    "image": "media/works/skin-10.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-11",
+    "category": "skin",
+    "image": "media/works/skin-11.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-12",
+    "category": "skin",
+    "image": "media/works/skin-12.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-13",
+    "category": "skin",
+    "image": "media/works/skin-13.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-14",
+    "category": "skin",
+    "image": "media/works/skin-14.png",
+    "gallery": []
+  },
+  {
+    "id": "skin-15",
+    "category": "skin",
+    "image": "media/works/skin-15.png",
+    "gallery": []
+  },
+  {
+    "id": "emerald-sword",
+    "category": "items",
+    "image": "media/items/emerald-sword.png",
+    "gallery": []
+  },
+  {
+    "id": "chainsaw",
+    "category": "items",
+    "image": "media/items/chainsaw.png",
+    "gallery": []
+  },
+  {
+    "id": "item-icons",
+    "category": "items",
+    "image": "media/items/icons-sheet.png",
+    "gallery": [
+      "media/items/icon-01.png",
+      "media/items/icon-02.png",
+      "media/items/icon-03.png",
+      "media/items/icon-04.png",
+      "media/items/icon-05.png",
+      "media/items/icon-06.png"
+    ],
+    "lines": [
+      "16×16 item textures"
+    ]
+  },
+  {
+    "id": "promo-lineup",
+    "category": "art",
+    "image": "media/art/promo-lineup.jpg",
+    "gallery": []
+  },
+  {
+    "id": "promo-choice",
+    "category": "art",
+    "image": "media/art/promo-choice.jpg",
+    "gallery": []
+  },
+  {
+    "id": "render-board",
+    "category": "art",
+    "image": "media/art/render-board.jpg",
+    "gallery": []
   }
 ];

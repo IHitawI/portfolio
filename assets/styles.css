@@ -237,6 +237,9 @@ h1, h2, h3 { font-family: var(--font-pixel); font-weight: 400; line-height: .95;
   font-size: 14px;
 }
 .work:hover .work__open { background: var(--plum); color: var(--on-plum); }
+/* renders fill the whole picture area */
+.work--art .work__img { padding: 0; object-fit: cover; object-position: center; filter: none; image-rendering: auto; }
+.work--art .corner-pix { display: none; }
 @media (max-width: 480px) { .work__img { height: 300px; } }
 .empty { color: var(--muted); }
 

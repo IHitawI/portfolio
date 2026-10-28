@@ -19,15 +19,21 @@ window.SITE = {
   },
   "categories": {
     "skin": "Skins",
-    "4d": "4D Models"
+    "4d": "4D Models",
+    "items": "Items",
+    "art": "Renders"
   },
   "itemNames": {
     "skin": "Skin",
-    "4d": "4D Model"
+    "4d": "4D Model",
+    "items": "Item",
+    "art": "Render"
   },
   "defaultLines": {
     "skin": ["Custom textures & shading"],
-    "4d": ["Custom skin + 3D details", "Modelled and textured in Blockbench."]
+    "4d": ["Custom skin + 3D details", "Modelled and textured in Blockbench."],
+    "items": ["Item model & textures"],
+    "art": ["Render & promo art"]
   },
   "pricing": [
     {
